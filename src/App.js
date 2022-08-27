@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import gif from './loadinggif.gif'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='loadingScreen'>
+        <div className='loadingContainer'>
+          <img className='gif' width="250px" height="250px" src={gif}></img>
+          <p>Loading...</p>
+        </div>
+      </div>
     </div>
   );
 }
